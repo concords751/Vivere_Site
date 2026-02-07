@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Afacad', sans-serif;
+}
+
+body {
+  color: #572423;
+}
+
+/* HEADER (menor) */
+.header {
+  background: #5a1f1f;
+  padding: 1px 100px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;        /* deixa tudo em linha */
+  gap: 70px;            /* espaço entre os links */
+  flex-grow: 1;
+  justify-content: space-between; /* espalha os links dentro da nav */
+  gap: 80;                    /* espaço entre links é controlado pelo space-between */
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 20px;
+  padding: 8px 16px;
+}
+
+.nav a:hover {
+  color: #DDA640;
+}
+
+.logo {
+height: 100px;
+width: auto;
+margin-right: 10%;
+
+}
+
+
+/* HERO */
+.hero {
+  background: #F4E4BB;
+  padding: 32px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* PADRÃO DOS BOTÕES */
+.btn {
+  border: none;
+  padding: 14px 28px;   /* Tamanho fixo dos botões */
+  border-radius: 30px;  /* Bordas arredondadas */
+  cursor: pointer;
+  margin: 0 8px;        /* Espaçamento entre os botões */
+  font-size: 16px;      /* Tamanho da fonte */
+  font-weight: bold;    /* Deixa o texto em negrito */
+  text-transform: uppercase; /* Deixa o texto em maiúsculo */
+  transition: background 0.3s ease, transform 0.3s ease; /* Animação suave */
+}
+
+/* COR DO BOTÃO PRINCIPAL */
+.primary {
+  background: #f0b562;  /* Cor principal */
+  color: #fff;          /* Cor do texto */
+}
+
+/* COR DO BOTÃO SECUNDÁRIO */
+.secondary {
+  background: #f0b562;  /* Cor secundária */
+  color: #fff;          /* Cor do texto */
+}
+
+/* EFEITO DE HOVER (quando o mouse passa em cima) */
+.btn:hover {
+  transform: scale(1.05);  /* Levemente aumenta o botão ao passar o mouse */
+}
+
+
+/* DESTAQUES */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas */
+  gap: 32px; /* espaço entre as colunas */
+  max-width: 900px;
+  margin: 0 auto; /* centraliza na página */
+}
+
+.highlight-card {
+  display: flex;
+  flex-direction: column; /* imagem em cima, botão embaixo */
+  align-items: center;
+  gap: 12px;
+}
+
+.highlight-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px; /* quanto maior, mais arredondado */
+}
+
+/* PROCEDIMENTOS */
+.procedures {
+  text-align: center;
+}
+
+.procedure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.procedure-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.procedure-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+
+.procedure-card span {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.85);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.procedure-card:hover img {
+  filter: brightness(60%);
+}
+
+/* DETALHADO */
+.detail-split {
+  position: relative;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.detail-bg {
+  position: absolute;
+  inset: 0;
+  background: url('assets/botox2.jpg') center/cover no-repeat;
+}
+
+.detail-box {
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  background: rgba(255, 235, 230, 0.85);
+  backdrop-filter: blur(4px);
+  padding: 48px;
+}
+
+.detail-box h2 {
+  margin-bottom: 16px;
+}
+
+/* STORES */
+.stores {
+  background: #f5e3b8;
+  padding: 60px;
+  text-align: center;
+}
+
+.store-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.store-card img {
+  width: 280px;
+  border-radius: 16px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.about img {
+  width: 25%;
+  border-radius: 16px;
+}
+
+/* FOOTER */
+.footer {
+  background: #5a1f1f;
+  color: #fff;
+  padding: 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+
+.logotipos {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* ajuste fino aqui */
+}
+
+.logotipos img {
+  width: 60px; /* opcional, só pra padronizar */
+  height: auto;
+}
